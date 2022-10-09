@@ -66,13 +66,13 @@ const cardDisp = ((listArr) => {
     console.log('.......LisArr length........', listArr.length);
 
     if (listArr.length < 1) {
-        console.log('listArr length is: ', listArr.length);
-        console.log('listArr1 is:', listArr);
+        // console.log('listArr length is: ', listArr.length);
+        // console.log('listArr1 is:', listArr);
         $('#product-data').empty();
         data1 = products;
-        console.log('data1 is:', data1);
+        // console.log('data1 is:', data1);
         const data = data1;
-        for (let i = 0; i <= data.length; i++) {
+        for (let i = 0; i < data.length; i++) {
             $("#product-data").append(`<div class=" p-3 col-md-6 col-lg-3">
     <div class="card">
         <img class="card-img-top" src=${data[i].img} alt="Card image cap">
