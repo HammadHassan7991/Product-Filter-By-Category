@@ -63,7 +63,7 @@ $('input[type="checkbox"]').each(function (index, checkbox) {
 
 const cardDisp = ((listArr) => {
     let data1 = []; let filter = [];
-    console.log('.......LisArr length........', listArr.length);
+    // console.log('.......LisArr length........', listArr.length);
 
     if (listArr.length < 1) {
         // console.log('listArr length is: ', listArr.length);
@@ -90,14 +90,14 @@ const cardDisp = ((listArr) => {
 
     else if (listArr.length > 0) {
         let filter = [];
-        console.log('lisArr2 is :', listArr);
+        // console.log('lisArr2 is :', listArr);
 
         listArr.forEach(value => {
             const a = products.filter(e => e.cat == value)
             filter.push(a)
         })
         data1 = filter
-        console.log('data1 is:', data1);
+        // console.log('data1 is:', data1);
 
         $('#product-data').empty();
         for (let i = 0; i < data1.length; i++) {
